@@ -46,13 +46,13 @@ The simulation reached a high degree of convergence at iteration 1000:
 - **Mesh Status:** All geometry checks **OK**.
 
 ## 🚀 Key Findings
-- **Zero Errors:** The mesh passed all topology and geometry checks with zero errors.
-- **Ventilation Efficiency:** Strategic inlet positioning minimizes air stagnation.
-- **Thermal Stability:** Captured stable temperature gradients from floor to ceiling.
-
+**Numerical Stability:** The extremely low global continuity error ($10^{-19}$) ensures mass conservation.
+- **Thermal Range:** Temperatures are well-bounded between **299K** and **304K**, showing realistic stratification.
+- **Dead Zone Reduction:** Strategic ventilation positioning successfully minimizes air stagnation.
 
 **Developed by:** 
                 Yashar raisi
+
 
 
 
