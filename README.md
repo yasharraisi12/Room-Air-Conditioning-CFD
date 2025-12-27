@@ -1,18 +1,17 @@
 # 3D Indoor Airflow & Thermal Comfort Analysis using OpenFOAM
 
 ## 📌 Project Overview
-This project presents a high-fidelity CFD simulation of indoor airflow and heat distribution within a furnished room. The study focuses on evaluating ventilation efficiency and identifying stagnant zones using steady-state buoyant solvers.
-
+This project presents a high-fidelity CFD simulation of indoor airflow and heat distribution within a furnished room.
 ---
 ---
 
 ## 📊 Visual Analysis & Results
 
 ### 1. Global Airflow Pathlines (Top View)
-![Top View Airflow](TopView_Airflow_Pathlines.png)
+![Top View](TopView_Airflow_Pathlines.png)
 
 ### 2. 3D Velocity Vortex Structure
-![Velocity Streamlines](3D_Velocity_Vortex.png)
+![Velocity Vortex](3D_Velocity_Vortex.png)
 
 ### 3. Advanced Flow Vortex Analysis
 ![Flow Analysis](3D_Flow_Vortex_Analysis.png)
@@ -41,9 +40,11 @@ This project presents a high-fidelity CFD simulation of indoor airflow and heat 
 - **Mesh Status:** All topology and geometry checks **OK**.
 
 ## 🚀 Key Findings
-- **Mesh Integrity:** The mesh passed all checks with zero errors.
-- **Dead Zone Reduction:** Strategic inlet positioning minimizes air stagnation.
-- **Thermal Stratification:** Captured stable temperature gradients.
+- **Zero Errors:** The mesh passed all topology and geometry checks.
+- **Ventilation Efficiency:** Optimized air inlet paths successfully minimize stagnant zones.
+- **Thermal Stability:** Accurately captures stable thermal gradients.
 
 ---
-**Developed by:** Yashar
+**Developed by:** 
+                Yashar raisi
+
