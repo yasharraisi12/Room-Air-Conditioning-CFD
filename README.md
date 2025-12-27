@@ -1,27 +1,26 @@
 # 3D Indoor Airflow & Thermal Comfort Analysis using OpenFOAM
 
 ## 📌 Project Overview
-This project presents a high-fidelity CFD simulation of indoor airflow and heat distribution within a furnished room.
+/This project presents a high-fidelity CFD simulation of indoor airflow and heat distribution within a furnished room.
 ---
 ---
 
 ## 📊 Visual Analysis & Results
 
 ### 1. Global Airflow Pathlines (Top View)
-![Top View](TopView_Airflow_Pathlines.png)
+![Top View](./TopView_Airflow_Pathlines.png)
 
 ### 2. 3D Velocity Vortex Structure
-![Velocity Vortex](3D_Velocity_Vortex.png)
+![Velocity Vortex](./3D_Velocity_Vortex.png)
 
 ### 3. Advanced Flow Vortex Analysis
-![Flow Analysis](3D_Flow_Vortex_Analysis.png)
+![Flow Analysis](./3D_Flow_Vortex_Analysis.png)
 
 ### 4. Thermal & Vector Field Analysis
-![Thermal Vector](Thermal_Vector_Field_Analysis.png)
+![Thermal Vector](./Thermal_Vector_Field_Analysis.png)
 
 ### 5. Velocity Magnitude Distribution
-![Velocity Magnitude](Velocity_Magnitude_Distribution.png)
-
+![Velocity Magnitude](./Velocity_Magnitude_Distribution.png)
 ---
 ## 🛠 Technical Workflow & Numerical Specs
 
@@ -47,4 +46,5 @@ This project presents a high-fidelity CFD simulation of indoor airflow and heat 
 ---
 **Developed by:** 
                 Yashar raisi
+
 
