@@ -26,17 +26,24 @@ This project presents a high-fidelity CFD simulation of indoor airflow and heat 
 
 | Parameter | Specification |
 | :--- | :--- |
-| **Solver** | `buoyantSimpleFoam` |
+| **Solver** | `buoyantSimpleFoam` (Steady-State / Buoyant) |
 | **Turbulence Model** | RAS `k-Epsilon` |
 | **Total Cells** | **741,946** |
 | **Max Non-Orthogonality** | 37.42 |
-| **Max Aspect Ratio** | 2.44 |
-| **Total Volume** | 149.17 m³ |
+| **Global Continuity Error** | **-2.78e-19** (Excellent Stability) |
+| **Execution Time** | 6769.6 s |
 
-### 🧩 Mesh Breakdown (checkMesh Results)
+### 📈 Convergence Performance (Final Residuals)
+The simulation reached a high degree of convergence at iteration 1000:
+- **Velocity (Ux, Uy, Uz):** ~4.1e-03
+- **Pressure (p_rgh):** 4.6e-03
+- **Enthalpy (h):** 2.9e-03
+- **Turbulence (k, epsilon):** ~4.0e-03
+
+### 🧩 Mesh Breakdown (checkMesh)
 - **Hexahedra:** 674,032 cells
 - **Polyhedra:** 67,914 cells
-- **Mesh Status:** All topology and geometry checks **OK**.
+- **Mesh Status:** All geometry checks **OK**.
 
 ## 🚀 Key Findings
 - **Zero Errors:** The mesh passed all topology and geometry checks with zero errors.
@@ -46,6 +53,7 @@ This project presents a high-fidelity CFD simulation of indoor airflow and heat 
 
 **Developed by:** 
                 Yashar raisi
+
 
 
 
