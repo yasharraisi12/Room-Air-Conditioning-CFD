@@ -8,19 +8,19 @@
 ## 📊 Visual Analysis & Results
 
 ### 1. Global Airflow Pathlines (Top View)
-![Top View](./TopView_Airflow_Pathlines.png)
+![Top View](Images/TopView_Airflow_Pathlines.png)
 
 ### 2. 3D Velocity Vortex Structure
-![Velocity Vortex](./3D_Velocity_Vortex.png)
+![Velocity Vortex](Images/3D_Velocity_Vortex.png)
 
 ### 3. Advanced Flow Vortex Analysis
-![Flow Analysis](./3D_Flow_Vortex_Analysis.png)
+![Flow Analysis](Images/3D_Flow_Vortex_Analysis.png)
 
 ### 4. Thermal & Vector Field Analysis
-![Thermal Vector](./Thermal_Vector_Field_Analysis.png)
+![Thermal Vector](Images/Thermal_Vector_Field_Analysis.png)
 
 ### 5. Velocity Magnitude Distribution
-![Velocity Magnitude](./Velocity_Magnitude_Distribution.png)
+![Velocity Magnitude](Images/Velocity_Magnitude_Distribution.png)
 ---
 ## 🛠 Technical Workflow & Numerical Specs
 
@@ -39,12 +39,13 @@
 - **Mesh Status:** All topology and geometry checks **OK**.
 
 ## 🚀 Key Findings
-- **Zero Errors:** The mesh passed all topology and geometry checks.
-- **Ventilation Efficiency:** Optimized air inlet paths successfully minimize stagnant zones.
-- **Thermal Stability:** Accurately captures stable thermal gradients.
+- **Zero Errors:** The mesh passed all topology and geometry checks with zero errors.
+- **Ventilation Efficiency:** Strategic inlet positioning minimizes air stagnation.
+- **Thermal Stability:** Captured stable temperature gradients from floor to ceiling.
 
----
+
 **Developed by:** 
                 Yashar raisi
+
 
 
