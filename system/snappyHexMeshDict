@@ -1,0 +1,114 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  2506                                  |
+|   \\  /    A nd           | Website:  www.openfoam.com                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+    version     2.0;
+    format      ascii;
+    class       dictionary;
+    object      snappyHexMeshDict;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+castellatedMesh true;
+snap            true;
+addLayers       false;
+
+geometry
+{
+    room_final.stl
+    {
+        type triSurfaceMesh;
+        name room;
+    }
+};
+
+castellatedMeshControls
+{
+    maxLocalCells       1000000;
+    maxGlobalCells      5000000;
+    minRefinementCells  100;
+    maxLoadUnbalance    0.10;
+    nCellsBetweenLevels 3;
+
+    // --- پارامترهای اجباری نسخه 2506 ---
+    resolveFeatureAngle         30;
+    allowFreeStandingZoneFaces  false;
+    planarAngle                30;
+    nTrainIter                 0;
+    strictRegionEdgeModels     false;
+
+    features
+    (
+        {
+            file "room_final.eMesh";
+            level 2;
+        }
+    );
+
+    refinementSurfaces
+    {
+        room
+        {
+            level (1 1);
+            patchInfo { type wall; }
+        }
+    }
+
+    refinementRegions {}
+
+    locationInMesh (0 0 1); 
+}
+
+snapControls
+{
+    nSmoothPatch    3;
+    tolerance       2.0;
+    nSolveIter      30;
+    nRelaxIter      5;
+    nFeatureSnapIter 10; // اضافه شده برای دقت لبه‌های صندلی
+}
+
+addLayersControls
+{
+    relativeSizes       true;
+    layers
+    {
+        "room.*"
+        {
+            nSurfaceLayers 3;
+        }
+    }
+    expansionRatio      1.2;
+    finalLayerThickness 0.3;
+    minThickness        0.1;
+}
+
+meshQualityControls
+{
+maxNonOrtho         65;
+    maxBoundarySkewness 20;
+    maxInternalSkewness 4;
+    maxConcave          80;
+    minVol              1e-13;
+    minDeterminant      0.001;
+    minFaceWeight       1e-15;
+    minVolRatio         0.01;
+    minTriangleTwist    -1;
+
+    // --- پارامترهای اجباری جدید نسخه 2506 ---
+    minTetQuality       1e-15; // این همان خطی است که ارور می‌داد
+    minArea             -1;
+    minTwist            -1;
+    minFlatness         0.5;
+
+    nSmoothScale        4;
+    errorReduction      100;}
+
+mergeTolerance 1e-6;
+
+// ************************************************************************* //

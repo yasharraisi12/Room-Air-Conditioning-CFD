@@ -1,0 +1,39 @@
+FoamFile
+{
+    version     2.0;
+    format      ascii;
+    class       dictionary;
+    object      topoSetDict;
+}
+
+actions
+(
+    {
+        name    windowFaces;
+        type    faceSet;
+        action  new;
+        source  boxToFace;
+        box     (1.8 -1.0 -0.6) (2.0 1.0 0.8); 
+    }
+    {
+        name    windowFaces;
+        type    faceSet;
+        action  subset; 
+        source  patchToFace;
+        patch   room; 
+    }
+    {
+        name    doorFaces;
+        type    faceSet;
+        action  new;
+        source  boxToFace;
+        box     (-0.6 1.8 -1.5) (0.6 2.0 0.7);    
+    }
+    {
+        name    doorFaces;
+        type    faceSet;
+        action  subset; 
+        source  patchToFace;
+        patch   room;
+    }
+);

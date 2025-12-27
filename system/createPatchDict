@@ -1,0 +1,31 @@
+FoamFile
+{
+    version     2.0;
+    format      ascii;
+    class       dictionary;
+    object      createPatchDict;
+}
+
+pointSync false;
+
+patches
+(
+    {
+        name            window;
+        patchInfo
+        {
+            type        patch;
+        }
+        constructFrom   set;
+        set             windowFaces;
+    }
+    {
+        name            door;
+        patchInfo
+        {
+            type        patch;
+        }
+        constructFrom   set;
+        set             doorFaces;
+    }
+);
