@@ -1,7 +1,7 @@
 # 3D Indoor Airflow & Thermal Comfort Analysis using OpenFOAM
 
 ## 📌 Project Overview
-/This project presents a high-fidelity CFD simulation of indoor airflow and heat distribution within a furnished room.
+This project presents a high-fidelity CFD simulation of indoor airflow and heat distribution within a furnished room.
 ---
 ---
 
@@ -46,6 +46,7 @@
 
 **Developed by:** 
                 Yashar raisi
+
 
 
 
